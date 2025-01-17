@@ -1,5 +1,15 @@
+import UserLists from "../components/users/UserLists";
+import UserSearch from "../components/users/UserSearch";
+
+
 function Home() {
-  return <h1 className="text-6xl">Welcome</h1>;
+  return (
+    <div>
+      <UserSearch/>
+      <UserLists/>
+    </div>
+  )
+
 }
 
 export default Home;

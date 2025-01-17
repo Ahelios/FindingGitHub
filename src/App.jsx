@@ -4,10 +4,12 @@ import Footer from './components/layouts/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+import { GithubProvider } from "./context/github/GithubContext";
 
 const App = () => {
   return (
-    <Router>
+    <GithubProvider>
+      <Router>
       <div className="flex flex-col justify-between h-screen">
         <Navbar />
         <div className="container mx-auto px-3 pb-12">
@@ -23,6 +25,7 @@ const App = () => {
         <Footer/>
       </div>
     </Router>
+    </GithubProvider>
   );
 };
 
