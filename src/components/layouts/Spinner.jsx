@@ -1,14 +1,7 @@
-import spinner from '../../assets/spinnerAnimation.gif';
-
 function Spinner() {
   return (
-    <div className="w-100 mt-20">
-      <img
-        width={180}
-        className="mx-auto text-center"
-        src={spinner}
-        alt="loading icon"
-      />
+    <div className="w-100 mt-20 text-center">
+      <div className="text-4xl font-bold">Loading...</div>
     </div>
   );
 }
