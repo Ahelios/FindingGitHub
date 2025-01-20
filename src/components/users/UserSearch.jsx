@@ -4,16 +4,22 @@ import GithubContext from "../../context/github/GithubContext";
 function UserSearch() {
   const [text, setText] = useState('');
 
-  const {users} = useContext(GithubContext);
+  const {users, searchUsers} = useContext(GithubContext);
 
   const handleChage = (e) => {
     setText(e.target.value);
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault;
+    e.preventDefault();
 
-    
+    if(text === ""){
+      alert("Please enter something");
+    } else {
+      searchUsers(text);
+
+      setText("");
+    }
   };
 
   return (
@@ -33,7 +39,7 @@ function UserSearch() {
               />
               <button
                 type="submit"
-                className="btn btn-md ml-2 right-0  w-30 absolute rounded-l-none"
+                className="btn btn-md ml-2 right-0  w-30 absolute rounded-l-none animate-pulse"
               >
                 Search
               </button>

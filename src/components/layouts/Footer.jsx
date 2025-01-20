@@ -2,7 +2,7 @@ function Footer() {
   const footerYear = new Date().getFullYear();
 
   return (
-    <footer className="footer p-10 bg-gray-700 text-primary-content footer-center">
+    <footer className="footer p-10 bg-neutral text-primary-content footer-center">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +10,7 @@ function Footer() {
           viewBox="0 0 24 24"
           strokeWidth="2.2"
           stroke="grey"
-          className="size-10"
+          className="size-10 text-accent"
         >
           <path
             strokeLinecap="round"
@@ -19,7 +19,7 @@ function Footer() {
           />
         </svg>
       </div>
-      <p>Copyright &copy; {footerYear}</p>
+      <p className="text-neutral-content">Copyright &copy; {footerYear}</p>
     </footer>
   );
 }
