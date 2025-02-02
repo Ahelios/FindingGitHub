@@ -19,7 +19,7 @@ function Footer() {
           />
         </svg>
       </div>
-      <p className="text-neutral-content">Copyright &copy; {footerYear}</p>
+      <p className="text-neutral-content">Created 2025</p>
     </footer>
   );
 }
